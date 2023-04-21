@@ -1,8 +1,6 @@
 package gov.iti.jets.service.dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.time.Instant;
@@ -11,11 +9,9 @@ import java.time.Instant;
  * A DTO for the {@link gov.iti.jets.entity.Store} entity
  */
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class StoreDto implements Serializable {
-    private Short id;
-    private gov.iti.jets.entity.Staff Staff;
-    private AddressDto address;
-    private Instant lastUpdate;
+    private final Short id;
+    private final StaffDto managerStaff;
+    private final AddressDto address;
+    private final Instant lastUpdate;
 }

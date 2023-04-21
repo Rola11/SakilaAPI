@@ -5,10 +5,11 @@ import jakarta.persistence.*;
 import java.time.Instant;
 
 @Entity
-@Table(name = "address", schema = "sakila", indexes = {
-        @Index(name = "idx_location", columnList = "location"),
-        @Index(name = "idx_fk_city_id", columnList = "city_id")
-})
+@Table(name = "address", schema = "sakila"//, indexes = {
+//        @Index(name = "idx_location", columnList = "location"),
+//        @Index(name = "idx_fk_city_id", columnList = "city_id")
+//}
+)
 public class Address {
     @Id
     @Column(name = "address_id", columnDefinition = "SMALLINT UNSIGNED not null")
