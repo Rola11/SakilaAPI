@@ -18,7 +18,7 @@ public interface FilmServic {
 
     void delete(FilmDto filmDto);
 
-    List<ActorDto> getActorsForFilm(FilmDto FilmDto);
+    //List<ActorDto> getActorsForFilm(FilmDto FilmDto);
 
-    List<CategoryDto> getCategoriesForFilm(FilmDto FilmDto);
+    //List<CategoryDto> getCategoriesForFilm(FilmDto FilmDto);
 }

@@ -17,5 +17,5 @@ public interface CategoryServic {
 
     void delete(CategoryDto categoryDto);
 
-    List<FilmDto> getCategoryForActor(CategoryDto categoryDto);
+    // List<FilmDto> getCategoryForActor(CategoryDto categoryDto);
 }

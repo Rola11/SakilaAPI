@@ -16,5 +16,4 @@ public interface ActorServic {
 
     void delete(ActorDto actorDto);
 
-    List<FilmDto> getfilmsForActor(ActorDto actorDto);
 }
